@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../schema/fhir-single.xsd">
+	<id value="allergicrhinitis"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<p>Value set for AllergicRhinitisCodes for use in EBMonFHIR Statistic profile example</p>
+		</div>
+	</text>
+	<!--
+	  for this example, we use a real URI, since this example does have a canonical address
+		at which it's posted. Alternatively, We could have used an OID, or a UUID.
+    -->
+	<url value="http://hl7.org/fhir/ValueSet/allergicrhinitis"/>
+	<identifier>
+		<system value="http://ebmonfhir.org/id/valuesets"/>
+		<value value="allergicrhinitis"/>
+	</identifier>
+	<name value="Codes of allergic rhinitis diagnosis"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2019-04-15"/>
+	<publisher value="HL7 International"/>
+	<description value="Codes of allergic rhinitis diagnosis"/>
+	<copyright value="A real copyright goes here.  Required because of SNOMED codes"/>
+	<compose>
+		<inactive value="true"/>
+		<include>
+			<system value="http://hl7.org/fhir/sid/icd-10"/>
+			<concept>
+				<code value="J30.1"/>
+				<display value="Allergic rhinitis due to pollen"/>
+			</concept>
+			<concept>
+				<code value="J30.2"/>
+				<display value="Other seasonal allergic rhinitis"/>
+			</concept>
+			<concept>
+				<code value="J30.5"/>
+				<display value="Allergic rhinitis due to food"/>
+			</concept>
+			<concept>
+			<code value="J30.8"/>
+				<display value="Other allergic rhinitis"/>
+			</concept>
+			<concept>
+				<code value="J30.1"/>
+				<display value="Allergic rhinitis due to pollen"/>
+			</concept>
+			<concept>
+				<code value="J30.9"/>
+				<display value="Allergic rhinitis, unspecified"/>
+			</concept>
+			<concept>
+				<code value="J30.5"/>
+				<display value="Allergic rhinitis due to food"/>
+			</concept>
+			<concept>
+			<code value="J30.8"/>
+				<display value="Other allergic rhinitis"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="61582004"/>
+				<display value="Allergic rhinitis (disorder)"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

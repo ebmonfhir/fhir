@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<id value="allergicrhinitis"/>
+	<type value="person"/>
+	<actual value="false"/>
+	<name value="allergic rhinitis in adults without concomitant asthma"/>
+	<characteristic>
+		<code>
+			<coding>
+				<code value="dx"/>
+				<display value="Diagnosis code?"/>
+			</coding>
+		</code>
+		<valueReference>
+			<reference value="ValueSet/allergicrhinitis"/>
+			<type value="ValueSet"/>
+			<display value="Codes for Allergic rhinitis"/>
+		</valueReference>
+		<exclude value="false"/>
+	</characteristic>
+	<characteristic>
+		<code>
+			<coding>
+				<code value="age classifier"/>
+				<display value="How is this represented?"/>
+			</coding>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="133936004"/>
+				<display value="Adult (person)"/>
+			</coding>
+		</valueCodeableConcept>
+		<exclude value="false"/>
+	</characteristic>
+	<characteristic>
+		<code>
+			<coding>
+				<code value="dx"/>
+				<display value="Diagnosis code?"/>
+			</coding>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://hl7.org/fhir/sid/icd-10"/>
+				<code value="J45.909"/>
+				<display value="Unspecified asthma, uncomplicated"/>
+			</coding>
+		</valueCodeableConcept>
+		<exclude value="true"/>
+	</characteristic>
+</Group>

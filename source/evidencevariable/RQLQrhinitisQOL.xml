@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EvidenceVariable xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<id value="RQLQrhinitisQOL"/>
+	<title value="QoL (disease specific RQLQ) Better indicated by lower values)"/>
+	<status value="draft"/>
+	<type value="continuous"/>
+	<characteristic>
+		<definitionCodeableConcept>
+			<coding>
+				<display value="QoL (disease specific RQLQ) Better indicated by lower values)"/>
+			</coding>
+		</definitionCodeableConcept>
+		<exclude value="false"/>
+		<timeFromStart>
+			<value value="7"/>
+			<unit value="months"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mo"/>
+		</timeFromStart>
+		<groupMeasure value="median"/>
+	</characteristic>
+</EvidenceVariable>

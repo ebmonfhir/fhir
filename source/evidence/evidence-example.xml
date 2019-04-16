@@ -7,6 +7,8 @@
   </text>
   <status value="draft"/>
   <exposureBackground>
+    <population>
 	  <reference value="EvidenceVariable/example"/>
+    </population>
   </exposureBackground>
 </Evidence>

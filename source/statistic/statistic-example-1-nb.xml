@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Statistic xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	<id value="Statistic-example-1"/>
-	<resourceType value="Statistic"/>
 	<status value="draft"/>
 	<date value="2017-01-05T17:18:19+01:00"/>
-	<publisher value="Cochrane"/>
+	<publisher>
+		<name value="Cochrane"/>
+	</publisher>
 	<contributor>
 		<type value="author"/>
 		<name value="Jan L. Brozek"/>
@@ -22,29 +23,38 @@
 			<code value="RCT"/>
 		</coding>
 	</studyType>
-	<exposureBackgroundReference value="http://bit.ly/Group-AllergicRhinitisNOTasthma"/>
-	<exposureReference value="http://bit.ly/Group-SLimmunotherapy"/>
+	<exposureBackground>
+		<reference value="Group/AllergicRhinitisNOTasthma"/>
+		<type value="Group"/>
+		<display value="Allergic rhinitis in adults without concomitant asthma"/>
+	</exposureBackground>
+	<exposure>
+		<reference value="Group/SLimmunotherapy"/>
+		<type value="Group"/>
+		<display value="Sublingual specific immunotherapy exposure"/>
+	</exposure>
 	<exposureVariant>
-		<elementReference value="http://bit.ly/Group-noSLimmunotherapy"/>
+		<reference value="Group/noSLimmunotherapy"/>
+		<type value="Group"/>
+		<display value="No sublingual specific immunotherapy exposure"/>
 	</exposureVariant>
 	<measuredVariable>
-		<elementReference value="http://bit.ly/EvidenceVariable-RQLQrhinitisQOL"/>
+		<reference value="EvidenceVariable/RQLQrhinitisQOL"/>
+		<type value="EvidenceVariable"/>
+		<display value="No sublingual specific immunotherapy exposure"/>
 	</measuredVariable>
 	<statisticType>
-		<description value="SMD 0.36 lower (0.46 lower to 0.26 lower)"/>
-		<type>
-			<coding>
-				<system value="http://build.fhir.org/valueset-effect-estimate-type.html"/>
-				<code value="absolute-SMD"/>
-				<display value="standardized mean difference"/>
-			</coding>
-		</type>
+		<coding>
+			<system value="http://build.fhir.org/valueset-effect-estimate-type.html"/>
+			<code value="absolute-SMD"/>
+			<display value="standardized mean difference"/>
+		</coding>
+		<text value="SMD 0.36 lower (0.46 lower to 0.26 lower)"/>
 	</statisticType>
 	<quantity>
 		<value value="-0.36"/>
-		<comparator value="="/>
 		<unit value="points"/>
-		<system value="UCUM"/>
+		<system value="http://unitsofmeasure.org"/>
 		<code value="score"/>
 	</quantity>
 	<sampleSize>
@@ -72,7 +82,6 @@
 	<certainty>
 		<rating>
 			<coding>
-				<system value="GRADE"/>
 				<code value="3"/>
 				<display value="Moderate"/>
 			</coding>
@@ -80,47 +89,43 @@
 		<certaintySubcomponent>
 			<type>
 				<coding>
-					<system value="GRADE"/>
 					<code value="RiskOfBias"/>
 					<display value="Risk of bias"/>
 				</coding>
 			</type>
 			<rating>
 				<coding>
-					<system value="GRADE"/>
 					<code value="no-concern"/>
 					<display value="no serious concern"/>
 				</coding>
 			</rating>
 		</certaintySubcomponent>
 		<certaintySubcomponent>
+			<note>
+				<text value="No explanation was provided"/>
+			</note>
 			<type>
 				<coding>
-					<system value="GRADE"/>
 					<code value="Inconsistency"/>
 					<display value="Inconsistency"/>
 				</coding>
 			</type>
 			<rating>
 				<coding>
-					<system value="GRADE"/>
 					<code value="serious-concern"/>
 					<display value="serious concern"/>
 				</coding>
 			</rating>
-			<note value="No explanation was provided"/>
 		</certaintySubcomponent>
 		<certaintySubcomponent>
 			<type>
 				<coding>
-					<system value="GRADE"/>
 					<code value="Indirectness"/>
 					<display value="Indirectness"/>
 				</coding>
 			</type>
 			<rating>
 				<coding>
-					<system value="GRADE"/>
 					<code value="no-concern"/>
 					<display value="no serious concern"/>
 				</coding>
@@ -129,14 +134,12 @@
 		<certaintySubcomponent>
 			<type>
 				<coding>
-					<system value="GRADE"/>
 					<code value="Imprecision"/>
 					<display value="Imprecision"/>
 				</coding>
 			</type>
 			<rating>
 				<coding>
-					<system value="GRADE"/>
 					<code value="no-concern"/>
 					<display value="no serious concern"/>
 				</coding>
@@ -145,14 +148,12 @@
 		<certaintySubcomponent>
 			<type>
 				<coding>
-					<system value="GRADE"/>
 					<code value="PublicationBias"/>
 					<display value="Publication bias"/>
 				</coding>
 			</type>
 			<rating>
 				<coding>
-					<system value="GRADE"/>
 					<code value="no-concern"/>
 					<display value="no serious concern"/>
 				</coding>
@@ -161,14 +162,12 @@
 		<certaintySubcomponent>
 			<type>
 				<coding>
-					<system value="GRADE"/>
 					<code value="DoseResponseGradient"/>
 					<display value="Dose response gradient"/>
 				</coding>
 			</type>
 			<rating>
 				<coding>
-					<system value="GRADE"/>
 					<code value="absent"/>
 					<display value="absent"/>
 				</coding>
@@ -177,14 +176,12 @@
 		<certaintySubcomponent>
 			<type>
 				<coding>
-					<system value="GRADE"/>
 					<code value="PlausibleConfounding"/>
 					<display value="Plausible confounding"/>
 				</coding>
 			</type>
 			<rating>
 				<coding>
-					<system value="GRADE"/>
 					<code value="absent"/>
 					<display value="absent"/>
 				</coding>
@@ -193,14 +190,12 @@
 		<certaintySubcomponent>
 			<type>
 				<coding>
-					<system value="GRADE"/>
 					<code value="LargeEffect"/>
 					<display value="Large effect"/>
 				</coding>
 			</type>
 			<rating>
 				<coding>
-					<system value="GRADE"/>
 					<code value="absent"/>
 					<display value="absent"/>
 				</coding>

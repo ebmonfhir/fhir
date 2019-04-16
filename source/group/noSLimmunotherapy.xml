@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<id value="noSLimmunotherapy"/>
+	<type value="person"/>
+	<actual value="false"/>
+	<name value="no sublingual specific immunotherapy"/>
+	<characteristic>
+		<code>
+			<coding>
+				<code value="TBD"/>
+				<display value="What is the relationship of Allergen extract and a clinical record?"/>
+			</coding>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="709079002"/>
+				<display value="Allergen extract (product)"/>
+			</coding>
+		</valueCodeableConcept>
+		<exclude value="true"/>
+	</characteristic>
+</Group>
