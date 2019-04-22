@@ -10,7 +10,7 @@
   <Author>Grahame</Author>
   <LastAuthor>Microsoft Office User</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2019-04-12T16:05:17Z</LastSaved>
+  <LastSaved>2019-04-22T14:02:06Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
@@ -22,8 +22,8 @@
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
   <WindowHeight>27800</WindowHeight>
   <WindowWidth>32767</WindowWidth>
-  <WindowTopX>14640</WindowTopX>
-  <WindowTopY>460</WindowTopY>
+  <WindowTopX>22500</WindowTopX>
+  <WindowTopY>1180</WindowTopY>
   <ActiveSheet>1</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -1605,7 +1605,7 @@
     <Cell ss:StyleID="s98"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="48">
-    <Cell ss:StyleID="s93"><Data ss:Type="String">Statistic.publisher</Data><NamedCell
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Statistic.statisticPublisher</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1613,7 +1613,8 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s94"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s103"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Name changed to statistic-publisher because MetadataResource already defines string publisher</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s97"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s97"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1623,7 +1624,7 @@
     <Cell ss:Index="24" ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="16">
-    <Cell ss:StyleID="s93"><Data ss:Type="String">Statistic.publisher.name</Data><NamedCell
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Statistic.statisticPublisher.name</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">1..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -1645,7 +1646,7 @@
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="32">
-    <Cell ss:StyleID="s93"><Data ss:Type="String">Statistic.publisher.contact</Data><NamedCell
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Statistic.statisticPublisher.contact</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">0..*</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -3735,7 +3736,7 @@
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>10</TopRowBottomPane>
+   <TopRowBottomPane>7</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
    <LeftColumnRightPane>1</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
@@ -3752,8 +3753,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>23</ActiveRow>
-     <ActiveCol>4</ActiveCol>
+     <ActiveRow>13</ActiveRow>
+     <ActiveCol>0</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -8697,12 +8698,12 @@
     <Cell ss:StyleID="s212"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s211"/>
-    <Cell ss:StyleID="s112"/>
+    <Cell ss:StyleID="s211"><Data ss:Type="String">CrI</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="Number">5</Data></Cell>
     <Cell ss:StyleID="s191"/>
     <Cell ss:StyleID="s220"/>
-    <Cell ss:StyleID="s220"/>
-    <Cell ss:StyleID="s220"/>
+    <Cell ss:StyleID="s220"><Data ss:Type="String">credible interval</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">the interval in which a  parameter has a given probability</Data></Cell>
     <Cell ss:StyleID="s112"/>
     <Cell ss:StyleID="s112"/>
     <Cell ss:StyleID="s212"/>
@@ -9203,7 +9204,8 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveCol>1</ActiveCol>
+     <ActiveRow>5</ActiveRow>
+     <ActiveCol>5</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
